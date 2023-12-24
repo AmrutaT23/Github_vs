@@ -1,0 +1,17 @@
+abstract class A
+{
+	abstract void a(); //declare
+}
+class B extends A
+{
+	void a()
+	{
+		System.out.println("heyyy");
+	}
+public static void main(String args[])
+{
+	B b = new B();
+	b.a();
+}
+
+	
