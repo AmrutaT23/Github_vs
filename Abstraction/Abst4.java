@@ -1,17 +1,17 @@
 /*An abstract class has a construtor which prints "This is constructor of abstract class", an abstract method named 'a_method' and a non-abstract method which prints "This is a normal method of abstract class". A class 'SubClass' inherits the abstract class and has a method named 'a_method' which prints "This is abstract method". Now create an object of 'SubClass' and call the abstract method and the non-abstract method. (Analyse the result)*/
-abstract class Box
+abstract class Box      //abstract class
 {
     Box()
     {
         System.out.println("This is constructor of abstract class");
     }
-    abstract void a_method();
+    abstract void a_method();   //abstract method
     void n_method()
     {
         System.out.println("This is a normal method of abstract class"); 
     }
 }
-class Normal extends Box
+class Normal extends Box    //Inherit class
 {
      void a_method()
     {
@@ -22,8 +22,8 @@ class Abst4
 {
     public static void main(String args[])
     {
-        Box b = new Normal();
-        b.a_method();
-        b.n_method();
+        Box b = new Normal();       //(Factory method) Instance creation
+        b.a_method();               //method call
+        b.n_method();               //method call
     }
 }
