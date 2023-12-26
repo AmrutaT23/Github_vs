@@ -1,10 +1,10 @@
 /*Create an abstract class 'Animals' with two abstract methods 'cats' and 'dogs'. Now create a class 'Cats' with a method 'cats' which prints "Cats meow" and a class 'Dogs' with a method 'dogs' which prints "Dogs bark", both inheriting the class 'Animals'. Now create an object for each of the subclasses and call their respective methods.*/
-abstract class Animals      //abstract class
+abstract class Animals  
 {
-    abstract void cats();   //abstract method
-    abstract void dogs();      //abstract method
+    abstract void cats();
+    abstract void dogs();
 }
-class Cats extends Animals  //Inherit class
+class Cats extends Animals
 {
     void cats()
     {
@@ -12,7 +12,7 @@ class Cats extends Animals  //Inherit class
     }
     void dogs(){}
 }
-class Dogs extends Animals      //Inherit class
+class Dogs extends Animals
 {
     void dogs()
     {
@@ -24,10 +24,10 @@ class Abst5
 {
     public static void main(String args[])
     {
-        Animals a1 = new Cats();    //(Factory method) Instance creation
-        a1.cats();                  //method call
+        Animals a1 = new Cats();
+        a1.cats();
 
-        Animals a2 = new Dogs();    //(Factory method) Instance creation
-        a2.dogs();                  //method call
+        Animals a2 = new Dogs();
+        a2.dogs();
     }
 }
