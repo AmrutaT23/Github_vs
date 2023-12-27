@@ -1,4 +1,4 @@
-//multiple interface using interface
+//multiple interface using interface.
 
 interface Bank
 {
