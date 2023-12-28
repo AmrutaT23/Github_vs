@@ -1,4 +1,4 @@
-\\Array addition
+//Array addition
 class Arr1
 {
 	public static void main(String args[])
