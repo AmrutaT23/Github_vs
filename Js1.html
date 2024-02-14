@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-ELSE</title>
+</head>
+<body>
+    <script>
+        // Find Smalller Number
+        let a =parseInt(prompt("Enter the 1st value"));        
+        let b =parseInt(prompt("Enter the 2nd value"));
+        let c =parseInt(prompt("Enter the 3rd value"));        
+        let d =parseInt(prompt("Enter the 4th value"));
+        document.write(a +" ,"+b+", "+c+", "+d+"<br>");
+        if(a<=b && a<=c && a<=d)
+        {
+            document.write("a is smaller value");
+        }
+        else if(b<=a && b<=c && b<=d)
+        {
+            document.write("b is smaller value");
+        }
+        else if(c<=a && c<=b && c<=d)
+        {
+            document.write("c is smaller value");
+        }
+        else 
+        {
+            document.write("d is smaller value");
+        }
+
+
+    </script>
+    
+</body>
+</html>
