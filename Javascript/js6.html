@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITION</title>
+</head>
+<body>
+    <script>
+        let I1 =parseInt(prompt("Enter the 1st value"));        
+        let I2 =parseInt(prompt("Enter the 2nd value"));   
+        let I3 =parseInt(prompt("Enter the 3rd value"));        
+        let I4 =parseInt(prompt("Enter the 4th value"));   
+        let con =prompt("Enter G /S =>G :Find Greatest Number , S :Find Smallest Number ");    
+        
+        switch(con){
+            case "G":
+                    if(I1>=I2 && I1>=I3 && I1>=I4)
+                {
+                    document.write(`${I1}`+" is Greatest value");
+                }
+                else if(I2>=I1 && I2>=I3 && I2>=I4)
+                {
+                    document.write(`${I2}`+" is Greatest value");
+                }
+                else if(I3>=I1 && I3>=I2 && I3>=I4)
+                {
+                    document.write(`${I3}`+" is Greatest value");
+                }
+                else 
+                {
+                    document.write(`${I4}`+" is Greatest value");
+                }
+                break;
+            case "S":
+                    if(I1<=I2 && I1<=I3 && I1<=I4)
+                {
+                    document.write(`${I1}`+" is Smallest value");
+                }
+                else if(I2<=I1 && I2<=I3 && I2<=I4)
+                {
+                    document.write(`${I2}`+" is Smallest value");
+                }
+                else if(I3<=I1 && I3<=I2 && I3<=I4)
+                {
+                    document.write(`${I3}`+" is Smallest value");
+                }
+                else 
+                {
+                    document.write(`${I4}`+" is Smallest value");
+                }
+                break;
+                
+        }
+          
+    </script>
+</body>
+</html>
