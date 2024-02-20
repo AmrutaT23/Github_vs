@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+</head>
+<body>
+    <script>
+        function sub(s1,s2,s3,s4){
+            let Addition = s1+s2+s3+s4;
+            return Addition;
+        }
+        function Percent(){
+            let num = (sub(s1,s2,s3,s4)/400)*100;
+            return num;
+        }
+        let s1 = parseInt(prompt("Enter Subject [marathi] Marks : "));
+        let s2 = parseInt(prompt("Enter Subject [English] Marks : "));
+        let s3 = parseInt(prompt("Enter Subject [Maths] Marks : "));
+        let s4 = parseInt(prompt("Enter Subject [History] Marks : "));
+        document.write("The Total Percentage :"+Percent()+"%");
+
+    </script>
+</body>
+</html>
