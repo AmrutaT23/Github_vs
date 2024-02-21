@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+</head>
+<body>
+    <script>
+    let a =["Name","RollNo","Age"];  //column names
+    let b= ["Amruta",9,21];
+    let c = ["Sakshi",21,22]
+    document.write("<table border=1 solid");
+    document.write("<tr>");
+    for(let i=0;i<a.length;i++) 
+    {
+        document.write("<th>"+a[i]+"</th>");
+    }
+    document.write("</tr><tr>");
+    for(let j=0;j<b.length;j++)
+    {
+        document.write("<td>"+b[j]+"</td>");
+    }
+    document.write("</tr><tr>");
+        c.map((cur) => {
+            document.write("<td>" + cur + "</td>");
+        })
+        document.write("</tr></table>")
+    
+       
+    </script>
+</body>
+</html>
