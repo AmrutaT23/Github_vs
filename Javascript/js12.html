@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let arr = ['sahili','dnyamshwari','sakshi','sejal','purvja','amruta'];
+        let arr2 = [24,67,45,900,23,5];
+        document.write(arr.length +"<br>");
+        document.write((arr[0])+"<br>");
+        document.write((arr[5])+"<br>");
+
+        // ---------------Sort Method-----------------
+        document.write("Sorted Array is :  "+arr.sort()+"<br>")
+
+        // ---------------Iterate Array---------------
+        document.write("<br>Iterate Array is : ")
+        for(let i=0;i<arr.length;i++)
+        {
+            document.write("<br>"+arr[i]+"  ")
+        }
+
+        // --------------------Concat Mathod-----------
+
+        var a = ["sham","ram","seeta","geeta"];
+        var b = ["santosh","sagar"];
+        var c = ["april","may"];
+        var d = (a.concat(b)).concat(c);
+        document.write("<br><br>The concat method result is: " + d)
+
+        // ---------------Map-------------------------
+        let arr1 = ['sahili','dnyamshwari','sakshi','sejal','purvja','amruta','amruta'];
+        document.write("<ul type ='square'>")
+            arr1.map((cur,index,array)=>{
+                document.write("<li>"+cur+"</li>")
+            })
+            document.write('</ul>')
+
+        // --------------------IndexOf-----------------
+
+        document.write("Index is : "+arr1.indexOf('sakshi')); //Find the index from the starting of the array
+        document.write("<br>");
+
+        document.write("LastIndexOf : "+arr1.lastIndexOf('amruta'));//Find the index from the ending of the array
+        document.write("<br>");
+
+        document.write("Includes Method :"+arr1.includes('sakshi'));//it check the element are present or not and return boolean value
+
+
+        // -------------------------Find Method--------------------
+        let arr3 = [200,300,400,500,600];
+        document.write("<br>");
+
+        document.write("Find Method : ");
+        document.write(arr3.find((cur) =>{ //find the element in the array if the condition is statisfied retuurn only single value
+           return cur < 400;
+        }))
+        document.write("<br>");
+
+        document.write("FindIndex Method : ");
+        document.write(arr3.findIndex((cur) =>{ //find the element in the array if the condition is statisfied retuurn only single value
+            return cur == 500;
+        }))
+
+        document.write("<br>");
+        document.write("Filter Method : ");
+        document.write(arr3.filter((cur) =>{ //return all the value if the condition is satisfies return all
+            return cur >= 400;
+        }))
+
+        //insert add replace delete
+
+        document.write("<br>");
+        let arr4 =['A','B','C','D','E','F'];
+        arr4.push('G');//add element at last
+        document.write("Array After Push :"+arr4);
+
+        document.write("<br>");
+        arr4.unshift('a');//add element at start
+        document.write("Array After Ushift :"+arr4);
+
+        document.write("<br>");
+        arr4.pop();//delete element at end
+        document.write("Array After pop :"+arr4);
+
+        document.write("<br>");
+        arr4.shift();//delete element at start
+        document.write("Array After shift :"+arr4);
+
+         document.write("<br>");
+         const words = ['spray','elite','exubernt','destruction','present']
+         const result = words.filter((word)=> word.length>6);
+         document.write(result);
+
+        //  -----------------For Each Loop--------------------
+         document.write("<br>");
+         document.write("For Each Loop : <br>");
+        arr4.forEach((cur,index,array) => {
+            document.write(cur +"  "+ index+ " "+ array + "<br>")
+        })
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
