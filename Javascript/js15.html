@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Number In Array</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50];
+        let I4 =prompt("Enter any value");
+        let count=0;
+        for(let i=0; i<arr.length ;i++){
+            if(arr[i]==I4)
+            {
+                count=1;
+                break;
+            }
+        }
+        if(count==1)
+        {
+            document.write("Given Number is present in the array");
+        }
+        else{
+            document.write("Given Number is not present in the array");
+        }
+    </script>
+</body>
+</html>
