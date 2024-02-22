@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every and Some Method</title>
+</head>
+<body>
+    <script>
+        var a =[21,22,18,24,25];
+        document.write(a+" ");
+        document.write("<br>");
+        var b = a.every(check);//in every method every element is checked in array
+        document.write(b);
+
+        function check(age){
+            return age<=18
+        }
+
+        // -----------------------Some Method----------------------
+        document.write("<br>");
+        var c =[21,17,18,24,25];
+        document.write(c+" ");
+        document.write("<br>");
+        var d = a.some(Check);//The some() returns true(and stop)if condition is true then they do not check next element
+        document.write(d);      //The some() returns false if condition is false then they check all elements in the array
+
+        function Check(age){
+            return age<=18
+        }
+    </script>
+</body>
+</html>
