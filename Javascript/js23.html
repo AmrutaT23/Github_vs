@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game(js)</title>
+</head>
+<body>
+   <script>
+        const choices = ['rock', 'paper', 'scissor'];
+        
+        // Generate random index for the first value
+        const op1Index = Math.floor(Math.random() * choices.length);
+        const op1 = choices[op1Index];
+        document.write("Conputer Input: " + op1 + "<br>");
+
+        // Ask user for the second value
+        let op2Index = prompt("Second value (1-stone, 2-paper, 3-scissor)");
+        op2Index--; // Adjust index to match array indices
+        const op2 = choices[op2Index];
+        document.write("User Input: " + op2);
+
+        // Check for the winner
+        document.write("<br>");
+        if ((op1 === "rock" && op2 === "scissor") || (op1 === "scissor" && op2 === "rock")) {
+            document.write("ROCK WIN!!");
+        } else if ((op1 === "paper" && op2 === "scissor") || (op1 === "scissor" && op2 === "paper")) {
+            document.write("SCISSOR WIN!!");
+        } else if ((op1 === "rock" && op2 === "paper") || (op1 === "paper" && op2 === "rock")) {
+            document.write("PAPER WIN!!");
+        } else {
+            document.write("Match Draw");
+        }
+   </script> 
+</body>
+</html>
