@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Functions</title>
+</head>
+<body>
+    <script>
+        let date = new Date();
+        // document.write(date);
+        // document.write(new Date().toLocaleString());
+        // document.write(date.toLocaleString());
+        // document.write(new Date().toLocaleDateString());
+        // document.write(new Date().toLocaleTimeString());
+
+        console.log(Date.now());
+
+        // new Date(year,month,day,hour,min,sec,milisec)
+
+        let d = new Date(2024,3,23,5,2,7,0);
+        // console.log(d);
+        // console.log(d.toLocaleDateString());
+        // console.log(d.toLocaleTimeString());
+        // console.log(new Date('Tue Apr 23 2024 05:02:07 ').toLocaleString());
+        // console.log(new Date(1708926505911));
+
+        let curdate = new Date();
+        // console.log(curdate.toLocaleString());
+        // console.log(curdate.getFullYear());
+        // console.log(curdate.getMonth()); //month start from 0
+        // console.log(curdate.getDay());
+        // console.log(curdate.getDate());
+
+        // console.log(curdate.setFullYear(2045)); //set year
+        // console.log(curdate.setDate(8)); //display in milisecond
+        // console.log(curdate.setMonth(2));
+        // 2372565246734
+        // console.log(new Date(2372565246734));
+
+        let curtime = new Date();
+        // let printTiem = curtime.getTime();
+        // console.log(new Date(printTiem).toLocaleString());
+        // console.log(curtime.getHours());//  get hour (0 - 23)
+        // console.log(curtime.getMinutes()); // get minutes (0-5
+        // console.log(curtime.getTime());
+
+        console.log(new Date(curtime.setDate(23)));
+        console.log(new Date(curtime.setHours(3)).toLocaleTimeString());
+        console.log(new Date(curtime.setSeconds(23)));
+        console.log(new Date(curtime.setMinutes(23)));
+        console.log(curtime.setMilliseconds(3));
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
